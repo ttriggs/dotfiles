@@ -202,3 +202,9 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+
+# TT additions
+# originally: alias rake='noglob rake'
+alias rake='bundle exec rake'
+
+alias subln='subl -n .'
