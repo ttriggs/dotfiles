@@ -34,10 +34,12 @@ nmap <D-N> :NERDTreeToggle<CR>
 
 " move up/down quickly by using Cmd-j, Cmd-k
 " which will move us around by functions
-nnoremap <silent> <D-j> }
-nnoremap <silent> <D-k> {
-autocmd FileType ruby map <buffer> <D-j> ]m
-autocmd FileType ruby map <buffer> <D-k> [m
+" nnoremap <silent> <D-j> }
+" nnoremap <silent> <D-k> {
+" autocmd FileType ruby map <buffer> <D-j> ]m
+" autocmd FileType ruby map <buffer> <D-k> [m
+autocmd FileType ruby map <buffer> <D-j> }
+autocmd FileType ruby map <buffer> <D-k> {
 autocmd FileType rspec map <buffer> <D-j> }
 autocmd FileType rspec map <buffer> <D-k> {
 autocmd FileType javascript map <buffer> <D-k> }
