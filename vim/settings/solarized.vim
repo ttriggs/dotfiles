@@ -61,16 +61,22 @@ if !exists("g:yadr_disable_solarized_enhancements")
   " valued riffs on the background color, making
   " everything play together just a little more nicely.
   hi! VertSplit guifg=#003745 cterm=NONE term=NONE ctermfg=NONE ctermbg=NONE
-  hi! LineNR guifg=#004C60 gui=bold guibg=#002B36 ctermfg=146
+  " TT addition
+  " hi! LineNR guifg=#004C60 gui=bold guibg=#002B36 ctermfg=146
+  hi! LineNR guifg=#004C60 gui=bold guibg=#001e25 ctermfg=146
   hi! link NonText VertSplit
   hi! Normal guifg=#77A5B1
   hi! Constant guifg=#00BCE0
   hi! Comment guifg=#52737B
   hi! link htmlLink Include
   hi! CursorLine cterm=NONE gui=NONE
-" TT addition
+  " TT addition
   hi! Visual ctermbg=233 guibg=#004D60
   " hi! Visual ctermbg=233
+
+  " TT addition, yellow highlight
+  hi! Search guibg=#C0DC09 guifg=#242424
+
   hi! Type gui=bold
   hi! EasyMotionTarget ctermfg=100 guifg=#4CE660 gui=bold
 
