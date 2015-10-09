@@ -208,3 +208,5 @@ alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune &&
 alias rake='bundle exec rake'
 
 alias subln='subl -n .'
+
+alias killmyspring='pkill -9 -f "spring server"; spring stop'
