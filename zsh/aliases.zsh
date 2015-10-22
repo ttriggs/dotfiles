@@ -209,4 +209,6 @@ alias rake='bundle exec rake'
 
 alias subln='subl -n .'
 
-alias killmyspring='pkill -9 -f "spring server"; spring stop'
+alias killmyspring="ps | grep 'spring server\|spring rspec' |grep -v grep |awk '{print \$1}' |xargs kill -9; spring stop"
+
+alias govagrant="vagrant up; vagrant ssh -c 'sudo service worker stop; sudo service core stop'"

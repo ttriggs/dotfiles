@@ -75,7 +75,7 @@ if !exists("g:yadr_disable_solarized_enhancements")
   " hi! Visual ctermbg=233
 
   " TT addition, yellow highlight
-  hi! Search guibg=#C0DC09 guifg=#242424
+  hi! Search guibg=#6EE128 guifg=#00212C
 
   hi! Type gui=bold
   hi! EasyMotionTarget ctermfg=100 guifg=#4CE660 gui=bold
