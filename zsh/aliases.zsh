@@ -66,8 +66,8 @@ alias :q='exit'
 alias ve='vim ~/.vimrc'
 
 # zsh profile editing
-alias ze='vim ~/.zshrc'
-alias zr='source ~/.zshrc'
+# alias ze='vim ~/.zshrc'
+# alias zr='source ~/.zshrc'
 
 # Git Aliases
 alias gs='git status'
@@ -212,3 +212,14 @@ alias subln='subl -n .'
 alias killmyspring="ps | grep 'spring server\|spring rspec' |grep -v grep |awk '{print \$1}' |xargs kill -9; spring stop"
 
 alias govagrant="vagrant up; vagrant ssh -c 'sudo service worker stop; sudo service core stop'"
+
+#zeus!
+alias zr='zeus rspec'
+alias zrc='zeus rails c'
+alias zrs='zeus rails s'
+alias zrdbm='zeus rake db:migrate'
+# alias zrdbtp='zeus rake db:test:prepare'
+
+alias killvimgrep="ps aux |grep vimgrep |grep -v "grep --color" |awk '{print $2}' |xargs kill -9"
+alias prep_parallel_spec="rake parallel:create && rake parallel:prepare"
+alias run_parallel_spec="rake parallel:spec"
