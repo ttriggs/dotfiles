@@ -19,5 +19,6 @@ function! s:FindRubyExec()
 endfunction
 
 if !exists("g:syntastic_ruby_exec")
-    let g:syntastic_ruby_exec = s:FindRubyExec()
+  " let g:syntastic_ruby_exec = s:FindRubyExec()
+    let g:syntastic_ruby_exec = '~/.rbenv/versions/2.2.0/bin/ruby'
 endif

@@ -218,6 +218,7 @@ alias zr='zeus rspec'
 alias zrc='zeus rails c'
 alias zrs='zeus rails s'
 alias zrdbm='zeus rake db:migrate'
+alias zst='zeus start'
 # alias zrdbtp='zeus rake db:test:prepare'
 
 alias killvimgrep="ps aux |grep vimgrep |grep -v "grep --color" |awk '{print $2}' |xargs kill -9"
