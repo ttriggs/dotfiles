@@ -225,5 +225,3 @@ alias killvimgrep="ps aux |grep vimgrep |grep -v "grep --color" |awk '{print $2}
 alias prep_parallel_spec="rake parallel:create && rake parallel:prepare"
 alias run_parallel_spec="rake parallel:spec"
 
-#git recent branches
-alias gbr="git for-each-ref --sort=committerdate refs/heads/ --format='(%(color:green)%(committerdate:relative)%(color:reset))%09%(color:blue)%(objectname:short)%(color:red)%09%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject)'"
