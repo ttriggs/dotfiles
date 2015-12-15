@@ -225,4 +225,4 @@ alias prep_parallel_spec="rake parallel:create && rake parallel:prepare"
 alias run_parallel_spec="rake parallel:spec"
 
 #git recent branches
-alias gbr="git for-each-ref --sort='-authordate:iso8601' --format='%(authordate:relative)%09%(authordate:short)%09%(objectname:short)%09%1B[0;33m%(refname:short)%1B[m%09' refs/heads"
+alias gbr="git for-each-ref --sort=committerdate refs/heads/ --format='(%(color:green)%(committerdate:relative)%(color:reset))%09%(color:blue)%(objectname:short)%(color:red)%09%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject)'"
