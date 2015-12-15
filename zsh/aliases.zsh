@@ -105,7 +105,9 @@ alias co='git co'
 alias gf='git fetch'
 alias gfch='git fetch'
 alias gd='git diff'
-alias gb='git b'
+#git branches sorted & colorized
+alias gbr="git for-each-ref --sort=committerdate refs/heads/ --format='(%(color:green)%(committerdate:relative)%(color:reset))%09%(color:blue)%(objectname:short)%(color:red)%09%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject)'"
+
 alias gbd='git b -D -w'
 # Staged and cached are the same thing
 alias gdc='git diff --cached -w'
@@ -209,16 +211,15 @@ alias rake='bundle exec rake'
 
 alias subln='subl -n .'
 
-alias killmyspring="ps | grep 'spring server\|spring rspec' |grep -v grep |awk '{print \$1}' |xargs kill -9; spring stop"
-
 alias govagrant="vagrant up; vagrant ssh -c 'sudo service worker stop; sudo service core stop'"
 
 #zeus!
 alias zr='zeus rspec'
 alias zrc='zeus rails c'
 alias zrs='zeus rails s'
+alias zst='zeus start'
 alias zrdbm='zeus rake db:migrate'
-# alias zrdbtp='zeus rake db:test:prepare'
+alias zrdbtp='zeus rake db:test:prepare'
 
 alias killvimgrep="ps aux |grep vimgrep |grep -v "grep --color" |awk '{print $2}' |xargs kill -9"
 alias prep_parallel_spec="rake parallel:create && rake parallel:prepare"
