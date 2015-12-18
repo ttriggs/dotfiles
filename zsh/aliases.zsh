@@ -105,9 +105,9 @@ alias co='git co'
 alias gf='git fetch'
 alias gfch='git fetch'
 alias gd='git diff'
+alias gb='git b'
 #git branches sorted & colorized
 alias gbr="git for-each-ref --sort=committerdate refs/heads/ --format='(%(color:green)%(committerdate:relative)%(color:reset))%09%(color:blue)%(objectname:short)%(color:red)%09%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject)'"
-
 alias gbd='git b -D -w'
 # Staged and cached are the same thing
 alias gdc='git diff --cached -w'
