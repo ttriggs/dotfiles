@@ -31,3 +31,6 @@ endif
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
 endif
+
+" syntax highlighting for ES6 files:
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
