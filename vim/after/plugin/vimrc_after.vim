@@ -23,7 +23,11 @@ map <Leader>so :! subl '%:p'<CR>
 map <Leader>!y :set virtualedit=all<CR>
 map <Leader>!n :set virtualedit=""<CR>
 
+" TT addtions: vim bufsurf
+map <Esc>o :BufSurfBack<cr>
+map <Esc>i :BufSurfForward<cr>
 
+vnoremap K :<C-U>execute "Ag " . GetVisual()<CR>
 if filereadable(expand("~/.yadr/vim/after/.vimrc.after"))
   source ~/.yadr/vim/after/.vimrc.after
 endif
