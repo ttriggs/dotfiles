@@ -221,7 +221,8 @@ alias zst='zeus start'
 alias zrdbm='zeus rake db:migrate'
 alias zrdbtp='zeus rake db:test:prepare'
 
-alias killvimgrep="ps aux |grep vimgrep |grep -v "grep --color" |awk '{print $2}' |xargs kill -9"
 alias prep_parallel_spec="rake parallel:create && rake parallel:prepare"
 alias run_parallel_spec="rake parallel:spec"
+
+export AWS_REGION=us-east-1
 
