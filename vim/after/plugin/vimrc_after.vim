@@ -27,6 +27,12 @@ map <Leader>!n :set virtualedit=""<CR>
 map <Esc>o :BufSurfBack<cr>
 map <Esc>i :BufSurfForward<cr>
 
+" TT addition: % go to last non-whitespace character
+" therefore in normal mode, v% will highlight from the cursor to the last
+" non-whitespace character
+vmap t g_
+
+
 if filereadable(expand("~/.yadr/vim/after/.vimrc.after"))
   source ~/.yadr/vim/after/.vimrc.after
 endif
