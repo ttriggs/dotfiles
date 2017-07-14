@@ -212,6 +212,8 @@ alias rake='bundle exec rake'
 alias subln='subl -n .'
 
 alias govagrant="vagrant up; vagrant ssh -c 'sudo service worker stop; sudo service core stop'"
+alias sn='stty sane'
+alias delint='node_modules/eslint/bin/eslint.js'
 
 #zeus!
 alias zr='zeus rspec'
@@ -226,3 +228,5 @@ alias run_parallel_spec="rake parallel:spec"
 
 export AWS_REGION=us-east-1
 
+# foreman start
+alias fs='bin/foreman s'
