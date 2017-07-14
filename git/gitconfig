@@ -128,3 +128,5 @@
 [user]
 	name = ttriggs
 	email = tyler.triggs@gmail.com
+[credential]
+	helper = osxkeychain
