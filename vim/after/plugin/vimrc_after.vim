@@ -45,6 +45,15 @@ vmap <Space> g_
 map ,jD :CtrlP db<CR>
 map ,jd :CtrlP app/decorators<CR>
 
+" use ag in CtrlP ??
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
 if filereadable(expand("~/.yadr/vim/after/.vimrc.after"))
   source ~/.yadr/vim/after/.vimrc.after
 endif
