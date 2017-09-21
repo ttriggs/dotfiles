@@ -215,6 +215,10 @@ alias govagrant="vagrant up; vagrant ssh -c 'sudo service worker stop; sudo serv
 alias sn='stty sane'
 alias delint='node_modules/eslint/bin/eslint.js'
 
+#go testing
+alias gotest="go test -v -run"
+alias gotestv="LEVEL=info go test -v -run"
+
 #zeus!
 alias zr='zeus rspec'
 alias zrc='zeus rails c'
