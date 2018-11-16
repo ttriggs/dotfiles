@@ -64,7 +64,7 @@ if !exists("g:yadr_disable_solarized_enhancements")
   hi! VertSplit guifg=#003745 cterm=NONE term=NONE ctermfg=NONE ctermbg=NONE
   " TT addition
   " hi! LineNR guifg=#004C60 gui=bold guibg=#002B36 ctermfg=146
-  hi! LineNR guifg=#004C60 gui=bold guibg=#001e25 ctermfg=146
+  hi! LineNR guifg=#004C60 gui=bold guibg=#001403 ctermfg=146
   hi! link NonText VertSplit
   hi! Normal guifg=#77A5B1
   hi! Constant guifg=#00BCE0
