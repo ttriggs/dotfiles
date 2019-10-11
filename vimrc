@@ -113,5 +113,8 @@ set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
+" Add homebrew fzf to the vim path:
+set rtp+=/usr/local/opt/fzf
+
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim

@@ -22,11 +22,12 @@ imap <silent> <D-D> -
 " The f makes it find the enclosure so you don't have
 " to be standing inside it
 nnoremap <D-'> f'ci'
-nnoremap <D-"> f"ci"
+" nnoremap <D-"> f"ci" orig
 nnoremap <D-(> f(ci(
 nnoremap <D-)> f)ci)
 nnoremap <D-[> f[ci[
 nnoremap <D-]> f]ci]
+nnoremap <D-"> ^ci"
 
 " ==== NERD tree
 " Cmd-Shift-N for nerd tree
@@ -61,10 +62,10 @@ map <silent> <D-8> :tabn 8<cr>
 map <silent> <D-9> :tabn 9<cr>
 
 " Resize windows with arrow keys
-nnoremap <D-Up> <C-w>+
-nnoremap <D-Down> <C-w>-
-nnoremap <D-Left> <C-w><
-nnoremap <D-Right>  <C-w>>
+" nnoremap <D-Up> <C-w>+
+" nnoremap <D-Down> <C-w>-
+" nnoremap <D-Left> <C-w><
+" nnoremap <D-Right>  <C-w>>
 
 " ============================
 " Tabularize - alignment

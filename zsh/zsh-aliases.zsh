@@ -12,6 +12,7 @@ alias -g G='| grep' # now you can do: ls foo G something
 alias jest='nocorrect jest'
 alias brspec='bundle exec rspec'
 alias berc='bundle exec rails c'
+alias os='overmind start'
 
 # Functions
 #
