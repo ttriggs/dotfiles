@@ -234,3 +234,6 @@ export AWS_REGION=us-east-1
 
 # foreman start
 alias fs='bin/foreman s'
+
+alias l="docker-compose -f $HOME/dev/local/docker-compose.yml"
+
